@@ -1,0 +1,69 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Align content at the top of the screen */
+  height: 100vh;
+  margin: 0;
+}
+
+.botones-container {
+  display: flex; /* Pone los elementos en fila (uno al lado del otro) */
+  justify-content: center; /* Centra los botones horizontalmente */
+  gap: 20px; /* Crea un espacio de 20px entre los botones */
+}
+
+h1 {
+  text-align: center;
+  font-family: Arial;
+}
+
+.top-centered-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.centered-form {
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* 1. Estilos generales para AMBOS botones */
+button {
+  background-color: #000;
+  width: 71px;
+  border-radius: 5px;
+  color: #fff;
+  padding: 11px;
+  border: none;
+  cursor: pointer; /* Para que aparezca la manita al pasar el mouse */
+}
+
+
+/* 3. Un efecto bonito SOLO para el botón "Sí" */
+#btnsi:hover {
+  transform: scale(1.1); /* Hacemos que crezca un poco */
+  background-color: #333; /* Cambiamos el color al pasar el mouse */
+}
+
+
+/* --- FIN DEL REEMPLAZO --- */
+
+@media only screen and (max-width: 600px) {
+  input {
+    width: 90%;
+  }
+  button {
+    right: 43%;
+  }
+  button:hover {
+    transform: none;
+  }
+}
